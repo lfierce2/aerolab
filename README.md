@@ -1,0 +1,76 @@
+# pop2obs
+
+Synthetic observations from aerosol populations.
+
+pop2obs takes a population built with [part2pop](https://github.com/pnnl/part2pop) and returns what an instrument would observe from it, with noise layered on top. It also computes quantities that common instruments do not measure, such as size-resolved composition, from the same population. The paired results are inputs and targets for developing and testing methods that infer population properties from observations, where the true answer is known.
+
+## How it works
+
+```
+population  ->  observation (noise-free)  ->  noise  ->  noisy observation
+```
+
+- **Population:** a part2pop `ParticlePopulation`, from any source part2pop can build (PartMC, MAM4, lognormal modes, single-particle data).
+- **Observation:** a noise-free quantity of one type, computed from the population. Each type is a function in `pop2obs.observations`: `size_distribution`, `bulk_composition`, `optics` (scattering and absorption) and `size_resolved_composition`.
+- **Instrument:** one module per instrument in `pop2obs.instruments`: `smps` (size distribution), `acsm` (bulk composition) and `optics` (scattering and absorption). Each names the observation type it reports and applies its own settings (size range, species seen, wavelengths) and its noise. `pop2obs.observe("smps", population)` looks one up by name.
+- **Noise:** `pop2obs.noise` adds random error to a noise-free observation (Poisson counting noise, or Gaussian noise with a relative error and an absolute floor) and masks values below a detection limit. A `seed` makes noise reproducible.
+- **Record:** every result is an `Observation`: values, grid, units, noise level (`uncertainty`), `mask`, `availability` (where it exists in real data) and provenance. After noise is applied, the noise-free values stay in `noise_free`. `to_dict()` gives plain arrays and metadata to save in any format.
+
+A truth target needs no instrument. It is the same kind of observation, computed directly with no noise.
+
+## How it fits with part2pop
+
+part2pop describes what the population is; pop2obs describes what can be observed of it. pop2obs takes whatever part2pop builds, and calls part2pop where it already computes a quantity (the size distribution uses `dNdlnD`). Quantities part2pop lacks, such as size-resolved composition, are parked here and are expected to move to part2pop once their definition settles. Bulk composition is also computed here, because it needs a size cut and part2pop's `spec_mass_conc` fails in 1.1.0.
+
+## Using it to train a model
+
+A training script loops over populations. It takes the observations the model will see as inputs and the quantity to infer as the target; which is which is the script's choice, not the package's.
+
+```python
+import numpy as np
+from part2pop import build_population
+
+import pop2obs
+from pop2obs.observations import size_resolved_composition
+
+edges = np.logspace(-8, -6, 21)  # target size bins, 10 nm to 1 um
+instruments = ["smps", "acsm", "optics"]
+inputs = {name: [] for name in instruments}
+targets, masks = [], []
+for i, gmd in enumerate([60e-9, 90e-9, 130e-9]):
+    population = build_population({
+        "type": "binned_lognormals", "N": [1e9], "GMD": [gmd], "GSD": [1.6],
+        "N_bins": 40, "aero_spec_names": [["SO4", "BC"]],
+        "aero_spec_fracs": [[0.7, 0.3]],
+    })
+    for k, name in enumerate(instruments):  # a different seed for each instrument
+        x = pop2obs.observe(name, population, noise=True, seed=100 * i + k)  # input
+        inputs[name].append(x.values)
+    y = size_resolved_composition(population, edges, species=["SO4", "BC"])  # target
+    targets.append(y.values)
+    masks.append(y.mask)
+```
+
+- Split by scenario rather than by sample, so held-out scenarios are independent simulations.
+- Use a different seed per instrument and sample so noise is independent, and pass `species=` so every sample has the same species list.
+- Targets carry a `mask` for empty bins; inputs carry one for values below the detection limit. Each instrument keeps its own array and units, so scaling and combining them is the model's job.
+- Writing arrays to files (NetCDF, NumPy) is left to the script; colleagues training their own model need only those files. A training package can instead import pop2obs and use the noise-free values and noise level kept in each record.
+
+## Demo
+
+`python examples/demo_partmc.py` runs the three instruments on a bundled PartMC-MOSAIC snapshot (the last output of part2pop's example scenario), prints a summary and writes a four-panel figure to `examples/out/`. It also takes any PartMC run folder and timestep: `python examples/demo_partmc.py PARTMC_DIR TIMESTEP`.
+
+## Status
+
+Working: the SMPS-, ACSM- and optics-like instruments from the workflow figure, plus the size-resolved composition target. All instrument settings are placeholders for the team to review, and instrument physics (SMPS transfer function and charging, ACSM collection efficiency and lens transmission, optics truncation) is not modelled. Not yet: AMS and SEM-EDX instruments, and missing data. For a 10,000-particle population, optics takes about 8 s and the SMPS about 3 s, mostly part2pop's per-particle lookups. The architecture for the population-constraint problem is still being worked out with the team and is not part of pop2obs.
+
+## Development
+
+```bash
+conda env create -f environment.yml
+conda activate pop2obs
+python -m pip install -e ".[dev]"
+python -m pytest
+```
+
+Sources for the workflow figures are in `docs/figures/workflow/`.

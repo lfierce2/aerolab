@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="960pt" height="540pt" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 540 
+L 960 540 
+L 960 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="ens">
+    <path d="M 46.08 471.6 
+L 198.72 471.6 
+Q 208.8 471.6 208.8 461.52 
+L 208.8 139.68 
+Q 208.8 129.6 198.72 129.6 
+L 46.08 129.6 
+Q 36 129.6 36 139.68 
+L 36 461.52 
+Q 36 471.6 46.08 471.6 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #eef1f4; stroke: #7f8fa0; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="split_train">
+    <path d="M 57.6 410.4 
+L 187.2 410.4 
+Q 194.4 410.4 194.4 403.2 
+L 194.4 391.68 
+Q 194.4 384.48 187.2 384.48 
+L 57.6 384.48 
+Q 50.4 384.48 50.4 391.68 
+L 50.4 403.2 
+Q 50.4 410.4 57.6 410.4 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #ffffff; stroke: #7f8fa0; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="split_held">
+    <path d="M 57.6 444.24 
+L 187.2 444.24 
+Q 194.4 444.24 194.4 437.04 
+L 194.4 425.52 
+Q 194.4 418.32 187.2 418.32 
+L 57.6 418.32 
+Q 50.4 418.32 50.4 425.52 
+L 50.4 437.04 
+Q 50.4 444.24 57.6 444.24 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #ffffff; stroke-dasharray: 5.6,4.2; stroke-dashoffset: 0; stroke: #7f8fa0; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="obs">
+    <path d="M 272.88 327.6 
+L 486.72 327.6 
+Q 496.8 327.6 496.8 317.52 
+L 496.8 139.68 
+Q 496.8 129.6 486.72 129.6 
+L 272.88 129.6 
+Q 262.8 129.6 262.8 139.68 
+L 262.8 317.52 
+Q 262.8 327.6 272.88 327.6 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #e7f1f8; stroke: #2b7bae; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="smps simulator">
+    <path d="M 284.4 231.84 
+L 475.2 231.84 
+Q 482.4 231.84 482.4 224.64 
+L 482.4 200.16 
+Q 482.4 192.96 475.2 192.96 
+L 284.4 192.96 
+Q 277.2 192.96 277.2 200.16 
+L 277.2 224.64 
+Q 277.2 231.84 284.4 231.84 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #ffffff; stroke: #2b7bae; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="acsm simulator">
+    <path d="M 284.4 275.04 
+L 475.2 275.04 
+Q 482.4 275.04 482.4 267.84 
+L 482.4 243.36 
+Q 482.4 236.16 475.2 236.16 
+L 284.4 236.16 
+Q 277.2 236.16 277.2 243.36 
+L 277.2 267.84 
+Q 277.2 275.04 284.4 275.04 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #ffffff; stroke: #2b7bae; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="optics simulator">
+    <path d="M 284.4 318.24 
+L 475.2 318.24 
+Q 482.4 318.24 482.4 311.04 
+L 482.4 286.56 
+Q 482.4 279.36 475.2 279.36 
+L 284.4 279.36 
+Q 277.2 279.36 277.2 286.56 
+L 277.2 311.04 
+Q 277.2 318.24 284.4 318.24 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #ffffff; stroke: #2b7bae; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="truth">
+    <path d="M 272.88 471.6 
+L 486.72 471.6 
+Q 496.8 471.6 496.8 461.52 
+L 496.8 359.28 
+Q 496.8 349.2 486.72 349.2 
+L 272.88 349.2 
+Q 262.8 349.2 262.8 359.28 
+L 262.8 461.52 
+Q 262.8 471.6 272.88 471.6 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #e4f4ef; stroke: #1b8e7b; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="ml">
+    <path d="M 539.28 367.2 
+L 717.12 367.2 
+Q 727.2 367.2 727.2 357.12 
+L 727.2 190.08 
+Q 727.2 180 717.12 180 
+L 539.28 180 
+Q 529.2 180 529.2 190.08 
+L 529.2 357.12 
+Q 529.2 367.2 539.28 367.2 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #f0ebf8; stroke: #7656b0; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="eval">
+    <path d="M 769.68 471.6 
+L 913.68 471.6 
+Q 923.76 471.6 923.76 461.52 
+L 923.76 139.68 
+Q 923.76 129.6 913.68 129.6 
+L 769.68 129.6 
+Q 759.6 129.6 759.6 139.68 
+L 759.6 461.52 
+Q 759.6 471.6 769.68 471.6 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #fcf1d8; stroke: #b87a0a; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 36 109.44 
+L 924 109.44 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #d3dae1; stroke-width: 1.2"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 543.6 273.6 
+L 712.8 273.6 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #7656b0; stroke-width: 0.9"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 774 255.6 
+L 909.36 255.6 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #b87a0a; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 774 307.44 
+L 909.36 307.44 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #b87a0a; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 774 359.28 
+L 909.36 359.28 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #b87a0a; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 774 411.12 
+L 909.36 411.12 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #b87a0a; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 208.8 297 
+L 228.24 297 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #7f8fa0; stroke-width: 2.6"/>
+   </g>
+   <g id="fork_obs_line">
+    <path d="M 228.24 297 
+L 228.24 223.2 
+L 246.96 223.2 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #2b7bae; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="fork_obs_head">
+    <path d="M 262.8 223.2 
+L 246.96 213.84 
+L 246.96 232.56 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #2b7bae; stroke: #2b7bae; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="fork_truth_line">
+    <path d="M 228.24 297 
+L 228.24 403.2 
+L 246.96 403.2 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #1b8e7b; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="fork_truth_head">
+    <path d="M 262.8 403.2 
+L 246.96 393.84 
+L 246.96 412.56 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #1b8e7b; stroke: #1b8e7b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="obs_ml_line">
+    <path d="M 496.8 223.2 
+L 513.36 223.2 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #2b7bae; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="obs_ml_head">
+    <path d="M 529.2 223.2 
+L 513.36 213.84 
+L 513.36 232.56 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #2b7bae; stroke: #2b7bae; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="truth_ml_line">
+    <path d="M 496.8 403.2 
+L 662.4 403.2 
+L 662.4 383.04 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #1b8e7b; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="truth_ml_head">
+    <path d="M 662.4 367.2 
+L 653.04 383.04 
+L 671.76 383.04 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #1b8e7b; stroke: #1b8e7b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="ml_eval_line">
+    <path d="M 727.2 273.6 
+L 743.76 273.6 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke: #7656b0; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="ml_eval_head">
+    <path d="M 759.6 273.6 
+L 743.76 264.24 
+L 743.76 282.96 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7656b0; stroke: #7656b0; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="truth_eval_line">
+    <path d="M 496.8 439.2 
+L 743.76 439.2 
+" clip-path="url(#p51ef4a7600)" style="fill: none; stroke-dasharray: 3.9,2.6; stroke-dashoffset: 0; stroke: #1b8e7b; stroke-width: 2.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="truth_eval_head">
+    <path d="M 759.6 439.2 
+L 743.76 429.84 
+L 743.76 448.56 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #1b8e7b; stroke: #1b8e7b; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 55.44 217.488 
+C 56.089217 217.488 56.711932 217.230063 57.170997 216.770997 
+C 57.630063 216.311932 57.888 215.689217 57.888 215.04 
+C 57.888 214.390783 57.630063 213.768068 57.170997 213.309003 
+C 56.711932 212.849937 56.089217 212.592 55.44 212.592 
+C 54.790783 212.592 54.168068 212.849937 53.709003 213.309003 
+C 53.249937 213.768068 52.992 214.390783 52.992 215.04 
+C 52.992 215.689217 53.249937 216.311932 53.709003 216.770997 
+C 54.168068 217.230063 54.790783 217.488 55.44 217.488 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 55.44 234.648 
+C 56.089217 234.648 56.711932 234.390063 57.170997 233.930997 
+C 57.630063 233.471932 57.888 232.849217 57.888 232.2 
+C 57.888 231.550783 57.630063 230.928068 57.170997 230.469003 
+C 56.711932 230.009937 56.089217 229.752 55.44 229.752 
+C 54.790783 229.752 54.168068 230.009937 53.709003 230.469003 
+C 53.249937 230.928068 52.992 231.550783 52.992 232.2 
+C 52.992 232.849217 53.249937 233.471932 53.709003 233.930997 
+C 54.168068 234.390063 54.790783 234.648 55.44 234.648 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 55.44 251.808 
+C 56.089217 251.808 56.711932 251.550063 57.170997 251.090997 
+C 57.630063 250.631932 57.888 250.009217 57.888 249.36 
+C 57.888 248.710783 57.630063 248.088068 57.170997 247.629003 
+C 56.711932 247.169937 56.089217 246.912 55.44 246.912 
+C 54.790783 246.912 54.168068 247.169937 53.709003 247.629003 
+C 53.249937 248.088068 52.992 248.710783 52.992 249.36 
+C 52.992 250.009217 53.249937 250.631932 53.709003 251.090997 
+C 54.168068 251.550063 54.790783 251.808 55.44 251.808 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 55.44 268.968 
+C 56.089217 268.968 56.711932 268.710063 57.170997 268.250997 
+C 57.630063 267.791932 57.888 267.169217 57.888 266.52 
+C 57.888 265.870783 57.630063 265.248068 57.170997 264.789003 
+C 56.711932 264.329937 56.089217 264.072 55.44 264.072 
+C 54.790783 264.072 54.168068 264.329937 53.709003 264.789003 
+C 53.249937 265.248068 52.992 265.870783 52.992 266.52 
+C 52.992 267.169217 53.249937 267.791932 53.709003 268.250997 
+C 54.168068 268.710063 54.790783 268.968 55.44 268.968 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 55.44 313.248 
+C 56.089217 313.248 56.711932 312.990063 57.170997 312.530997 
+C 57.630063 312.071932 57.888 311.449217 57.888 310.8 
+C 57.888 310.150783 57.630063 309.528068 57.170997 309.069003 
+C 56.711932 308.609937 56.089217 308.352 55.44 308.352 
+C 54.790783 308.352 54.168068 308.609937 53.709003 309.069003 
+C 53.249937 309.528068 52.992 310.150783 52.992 310.8 
+C 52.992 311.449217 53.249937 312.071932 53.709003 312.530997 
+C 54.168068 312.990063 54.790783 313.248 55.44 313.248 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 55.44 330.408 
+C 56.089217 330.408 56.711932 330.150063 57.170997 329.690997 
+C 57.630063 329.231932 57.888 328.609217 57.888 327.96 
+C 57.888 327.310783 57.630063 326.688068 57.170997 326.229003 
+C 56.711932 325.769937 56.089217 325.512 55.44 325.512 
+C 54.790783 325.512 54.168068 325.769937 53.709003 326.229003 
+C 53.249937 326.688068 52.992 327.310783 52.992 327.96 
+C 52.992 328.609217 53.249937 329.231932 53.709003 329.690997 
+C 54.168068 330.150063 54.790783 330.408 55.44 330.408 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 55.44 347.568 
+C 56.089217 347.568 56.711932 347.310063 57.170997 346.850997 
+C 57.630063 346.391932 57.888 345.769217 57.888 345.12 
+C 57.888 344.470783 57.630063 343.848068 57.170997 343.389003 
+C 56.711932 342.929937 56.089217 342.672 55.44 342.672 
+C 54.790783 342.672 54.168068 342.929937 53.709003 343.389003 
+C 53.249937 343.848068 52.992 344.470783 52.992 345.12 
+C 52.992 345.769217 53.249937 346.391932 53.709003 346.850997 
+C 54.168068 347.310063 54.790783 347.568 55.44 347.568 
+z
+" clip-path="url(#p51ef4a7600)" style="fill: #7f8fa0"/>
+   </g>
+   <g id="tag">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #175a85" x="36" y="31.651875" transform="rotate(-0 36 31.651875)">BRIDGE  ·  SYNTHETIC-OBSERVATION WORKFLOW</text>
+   </g>
+   <g id="title">
+    <text style="font-weight: 700; font-size: 28px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="36" y="64.845" transform="rotate(-0 36 64.845)">A synthetic testbed for composition reconstruction</text>
+   </g>
+   <g id="subtitle">
+    <text style="font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #556575" x="36" y="94.145" transform="rotate(-0 36 94.145)">Synthetic observations and known composition come from the same PartMC–MOSAIC populations</text>
+   </g>
+   <g id="ens_eyebrow">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #3e4c5b" x="50.4" y="152.611875" transform="rotate(-0 50.4 152.611875)">1 · SIMULATE</text>
+   </g>
+   <g id="ens_title_0">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="50.4" y="172.32" transform="rotate(-0 50.4 172.32)">PartMC–MOSAIC</text>
+   </g>
+   <g id="ens_h1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #3e4c5b" x="50.4" y="199.20375" transform="rotate(-0 50.4 199.20375)">Scenarios vary in</text>
+   </g>
+   <g id="ens_vary_0">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="218.94" transform="rotate(-0 66.24 218.94)">conditions</text>
+   </g>
+   <g id="ens_vary_1">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="236.1" transform="rotate(-0 66.24 236.1)">composition</text>
+   </g>
+   <g id="ens_vary_2">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="253.26" transform="rotate(-0 66.24 253.26)">size distribution</text>
+   </g>
+   <g id="ens_vary_3">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="270.42" transform="rotate(-0 66.24 270.42)">mixing state</text>
+   </g>
+   <g id="ens_h2">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #3e4c5b" x="50.4" y="294.969844" transform="rotate(-0 50.4 294.969844)">Each population has</text>
+   </g>
+   <g id="ens_has_0">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="314.7" transform="rotate(-0 66.24 314.7)">particle sizes</text>
+   </g>
+   <g id="ens_has_1">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="331.86" transform="rotate(-0 66.24 331.86)">species masses</text>
+   </g>
+   <g id="ens_has_2">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="66.24" y="349.02" transform="rotate(-0 66.24 349.02)">number weights</text>
+   </g>
+   <g id="ens_h3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #3e4c5b" x="50.4" y="376.32375" transform="rotate(-0 50.4 376.32375)">Split by scenario</text>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: middle; fill: #3e4c5b" x="122.4" y="400.471875" transform="rotate(-0 122.4 400.471875)">Training scenarios</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: middle; fill: #3e4c5b" x="122.4" y="435.504375" transform="rotate(-0 122.4 435.504375)">Held-out scenarios</text>
+   </g>
+   <g id="obs_eyebrow">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #175a85" x="277.2" y="152.611875" transform="rotate(-0 277.2 152.611875)">2 · MODEL INPUTS</text>
+   </g>
+   <g id="obs_title_0">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="277.2" y="172.32" transform="rotate(-0 277.2 172.32)">Synthetic observations</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #175a85" x="288" y="210.207187" transform="rotate(-0 288 210.207187)">SMPS simulator</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="288" y="225.616406" transform="rotate(-0 288 225.616406)">number size distribution</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #175a85" x="288" y="253.407188" transform="rotate(-0 288 253.407188)">ACSM simulator</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="288" y="267.60375" transform="rotate(-0 288 267.60375)">bulk non-refractory species</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #175a85" x="288" y="295.314375" transform="rotate(-0 288 295.314375)">Optics simulator</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="288" y="310.724531" transform="rotate(-0 288 310.724531)">scattering, absorption</text>
+   </g>
+   <g id="truth_eyebrow">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #0f6657" x="277.2" y="372.211875" transform="rotate(-0 277.2 372.211875)">2 · TRAINING TARGETS</text>
+   </g>
+   <g id="truth_title_0">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="277.2" y="391.92" transform="rotate(-0 277.2 391.92)">Ground-truth composition</text>
+   </g>
+   <g id="truth_body_0">
+    <text style="font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="277.2" y="416.28" transform="rotate(-0 277.2 416.28)">Species mass fractions vs.</text>
+   </g>
+   <g id="truth_body_1">
+    <text style="font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="277.2" y="434.76" transform="rotate(-0 277.2 434.76)">particle diameter, calculated</text>
+   </g>
+   <g id="truth_body_2">
+    <text style="font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="277.2" y="453.24" transform="rotate(-0 277.2 453.24)">directly from each population</text>
+   </g>
+   <g id="ml_eyebrow">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #58398f" x="543.6" y="203.011875" transform="rotate(-0 543.6 203.011875)">3 · RECONSTRUCT</text>
+   </g>
+   <g id="ml_title_0">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="543.6" y="222.72" transform="rotate(-0 543.6 222.72)">AI/ML model</text>
+   </g>
+   <g id="ml_sub_0">
+    <text style="font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="543.6" y="241.32" transform="rotate(-0 543.6 241.32)">Predicts composition</text>
+   </g>
+   <g id="ml_sub_1">
+    <text style="font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="543.6" y="259.8" transform="rotate(-0 543.6 259.8)">with uncertainty</text>
+   </g>
+   <g id="ml_train_l">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #58398f" x="543.6" y="292.294688" transform="rotate(-0 543.6 292.294688)">TRAIN</text>
+   </g>
+   <g id="ml_train">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="543.6" y="308.564531" transform="rotate(-0 543.6 308.564531)">inputs + known targets</text>
+   </g>
+   <g id="ml_pred_l">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #58398f" x="543.6" y="331.894688" transform="rotate(-0 543.6 331.894688)">PREDICT</text>
+   </g>
+   <g id="ml_pred">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="543.6" y="348.164531" transform="rotate(-0 543.6 348.164531)">inputs only; truth withheld</text>
+   </g>
+   <g id="eval_eyebrow">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #855700" x="774" y="152.559375" transform="rotate(-0 774 152.559375)">4 · EVALUATE</text>
+   </g>
+   <g id="eval_title_0">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="172.32" transform="rotate(-0 774 172.32)">Compare with</text>
+   </g>
+   <g id="eval_title_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="192.32" transform="rotate(-0 774 192.32)">held-out truth</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #855700" x="774" y="223.137187" transform="rotate(-0 774 223.137187)">Accuracy</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="241.604531" transform="rotate(-0 774 241.604531)">by species and size</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #855700" x="774" y="275.0625" transform="rotate(-0 774 275.0625)">Consistency</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="294.736406" transform="rotate(-0 774 294.736406)">with observations</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #855700" x="774" y="326.817187" transform="rotate(-0 774 326.817187)">Ambiguity</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="345.360703" transform="rotate(-0 774 345.360703)">non-unique cases</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #855700" x="774" y="378.657187" transform="rotate(-0 774 378.657187)">Uncertainty</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="398.416406" transform="rotate(-0 774 398.416406)">calibrated intervals</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Arial'; text-anchor: start; fill: #855700" x="774" y="431.970469" transform="rotate(-0 774 431.970469)">Generalization</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'Arial'; text-anchor: start; fill: #14263a" x="774" y="450.256406" transform="rotate(-0 774 450.256406)">to new scenarios</text>
+   </g>
+   <g id="text_19">
+    <g id="patch_9">
+     <path d="M 539.530313 412.993945 
+L 619.669688 412.993945 
+Q 626.869688 412.993945 626.869688 405.793945 
+L 626.869688 400.606055 
+Q 626.869688 393.406055 619.669688 393.406055 
+L 539.530313 393.406055 
+Q 532.330312 393.406055 532.330312 400.606055 
+L 532.330312 405.793945 
+Q 532.330312 412.993945 539.530313 412.993945 
+z
+" style="fill: #ffffff; stroke: #1b8e7b; stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: middle; fill: #0f6657" x="579.6" y="406.231875" transform="rotate(-0 579.6 406.231875)">training targets</text>
+   </g>
+   <g id="text_20">
+    <g id="patch_10">
+     <path d="M 592.815 448.993945 
+L 663.585 448.993945 
+Q 670.785 448.993945 670.785 441.793945 
+L 670.785 436.606055 
+Q 670.785 429.406055 663.585 429.406055 
+L 592.815 429.406055 
+Q 585.615 429.406055 585.615 436.606055 
+L 585.615 441.793945 
+Q 585.615 448.993945 592.815 448.993945 
+z
+" style="fill: #ffffff; stroke: #1b8e7b; stroke-width: 1.3; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Arial'; text-anchor: middle; fill: #0f6657" x="628.2" y="443.424375" transform="rotate(-0 628.2 443.424375)">held-out truth</text>
+   </g>
+   <g id="footnote_1">
+    <text style="font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #556575" x="36" y="498.391875" transform="rotate(-0 36 498.391875)">Truth is exact only within the simulated aerosol system; observations may not uniquely determine composition.</text>
+   </g>
+   <g id="footnote_2">
+    <text style="font-size: 12px; font-family: 'Arial'; text-anchor: start; fill: #556575" x="36" y="516.465" transform="rotate(-0 36 516.465)">Held-out scenarios are independent simulations, not later time steps of the training runs.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p51ef4a7600">
+   <rect x="0" y="0" width="960" height="540"/>
+  </clipPath>
+ </defs>
+</svg>

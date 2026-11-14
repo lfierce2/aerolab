@@ -1,0 +1,8 @@
+name: pop2obs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - matplotlib
+  - pillow
