@@ -58,7 +58,69 @@ for i, gmd in enumerate([60e-9, 90e-9, 130e-9]):
 
 ## Demo
 
-`python examples/demo_partmc.py` runs the three instruments on a bundled PartMC-MOSAIC snapshot (the last output of part2pop's example scenario), prints a summary and writes a four-panel figure to `examples/out/`. It also takes any PartMC run folder and timestep: `python examples/demo_partmc.py PARTMC_DIR TIMESTEP`.
+`python examples/demo_partmc.py` runs the three instruments on a bundled PartMC-MOSAIC snapshot, prints a summary and writes a four-panel figure to `examples/out/`. It also accepts any PartMC run folder and timestep: `python examples/demo_partmc.py PARTMC_DIR TIMESTEP`. If the timestep is omitted, the demo selects the latest matching NetCDF file in `PARTMC_DIR/out/` and discovers its filename prefix rather than assuming a particular PartMC scenario name.
+
+By default, the demo writes separate, Excel-friendly CSV files for each
+instrument and the target beside the figure. The separated files use physical
+quantities rather than array indices:
+
+- SMPS: diameter and bin edges in nm; number concentration in
+  `cm^-3 per dlnD`.
+- ACSM: species and mass concentration in `ug m^-3`.
+- Optics: coefficient, wavelength in nm, and coefficient in `Mm^-1`.
+- Size-resolved composition: diameter and bin edges in nm, one dry-mass
+  fraction column per species, and the bin mass/number weights.
+
+Each noisy file contains the reported value, the noise-free expected value, the
+one-sigma uncertainty, and a validity/detection-limit flag. The explicitly
+noise-free files contain the noise-free value in both value and expected-value
+columns and have uncertainty set to zero. The instrument's theoretical
+uncertainty is still available in the combined machine-oriented output, but it
+is not presented as realized noise in the noise-free human-readable files.
+
+The default SMPS demo uses a counted volume 10 times smaller than the nominal
+placeholder volume, making the Poisson error bars visible without reducing
+most bins to zero. Adjust it with
+`--smps-volume-factor`; larger values mean more noise. For example:
+
+```bash
+python examples/demo_partmc.py --smps-volume-factor 1000
+```
+
+The optics figure and CSV contain scattering and absorption in separate
+physical units/scales. Use `--optics-output ssa` to compute single-scattering
+albedo instead:
+
+```bash
+python examples/demo_partmc.py --optics-output ssa
+```
+
+SSA is computed as `scattering / (scattering + absorption)`, with uncertainty
+propagated from the noisy scattering and absorption coefficients.
+
+Use `--combined` to write one tidy CSV per case instead:
+
+```
+python examples/demo_partmc.py --combined
+```
+
+This writes `demo_partmc_noise_free.csv` and `demo_partmc_with_noise.csv`.
+Custom filename stems can be supplied with `--noise-free-output` and
+`--with-noise-output` in either mode.
+
+## Workflows
+
+pop2obs is a library: it needs a population and nothing else. Running ensembles of
+simulations and turning them into datasets, on a laptop or a cluster, is the job of a
+separate workflow package, `popflow`. It chains
+AMBRS, PartMC-MOSAIC, part2pop and pop2obs:
+
+```text
+AMBRS → PartMC-MOSAIC → part2pop → pop2obs
+```
+
+The workflow package depends on pop2obs; pop2obs does not know about it, about Slurm,
+or about any machine.
 
 ## Status
 
